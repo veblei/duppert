@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KartActivity"
+    tools:ignore="ExtraText">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".KartActivity"
+        tools:ignore="ExtraText">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bekreftKnapp"
+            android:text="Bekreft sted"
+            android:textColor="@color/text"
+            android:shadowColor="@color/text_white"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"
+            android:layout_gravity="bottom"
+            android:background="@color/main"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</fragment>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@id/design_bottom_sheet"
+    android:background="@android:color/transparent"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="80dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/bottom_sheet"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@color/main" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/bottomSheetNavn"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/leggTilFavoritter"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_favorittikon2" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/luftTempInfo1"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/text" />
+
+            <TextView
+                android:id="@+id/luftTempInfo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:textColor="@color/text"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/vannTempInfo1"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/text" />
+
+            <TextView
+                android:id="@+id/vannTempInfo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:textColor="@color/text"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/tableInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:alpha="0.8"
+                android:text="Korttidsvarsel lufttemperatur:"
+                android:textColor="@color/text"
+                android:textStyle="italic" />
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/R1C0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:text="kl."
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/R1C1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/R1C2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/R1C3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/R1C4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/R1C5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/R1C6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:textColor="@color/text" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/R2C0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:text="C°"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/R2C1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/R2C2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/R2C3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/R2C4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/R2C5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/R2C6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:textColor="@color/text" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/bottomSheetUrlKnapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/main"
+                android:textColor="@color/text"
+                android:shadowColor="@color/text_white"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
+                android:text="Mer informasjon om stedet" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bakgrunn"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tittel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#41000000"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Duppert"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@id/kartKnapp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/kartKnapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="9"
+        android:backgroundTint="@color/green_1"
+        android:shadowColor="@color/black"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:text="Kart"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/favKnapp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tittel" />
+
+    <Button
+        android:id="@+id/favKnapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/black"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:ems="9"
+        android:backgroundTint="@color/green_1"
+        android:text="Favoritter"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/innstillingerKnapp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kartKnapp" />
+
+    <Button
+        android:id="@+id/innstillingerKnapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/black"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:ems="9"
+        android:backgroundTint="@color/green_1"
+        android:text="Innstillinger"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/favKnapp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

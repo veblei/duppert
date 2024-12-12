@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Badeapp</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_velg_sted">Map</string>
+    <string name="title_activity_favoritter">FavoritterActivity</string>
+    <string name="din_posisjon">Din posisjon</string>
+</resources>
